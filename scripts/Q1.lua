@@ -469,7 +469,7 @@ else if browser_was_button_click("match4D") then
 end if
 
 if total == 4 then
-    browser_dispatch_successful_command("browser_Q1_answer", "", "1")
+    browser_dispatch_successful_command("Q1_answer", "", "1")
     break
 end if
 
