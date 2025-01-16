@@ -1,0 +1,6 @@
+browser_set_fake_cookie_value("grid_Location", "techDirective")
+browser("https://learn.haikuinc.io/table")
+
+BusinessRascal
+BusinessGungnir
+BusinessDekkar
