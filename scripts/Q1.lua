@@ -2,7 +2,7 @@ total = 0
 
 while 1
 if browser_was_button_click("A") then
-    browser_alter_absolute_div("A", "color", "#00FFFF")
+    browser_alter_absolute_div("A", "color", "#9C215C")
     while 1
     if browser_was_button_click("match4A") then
         browser_delete_absolute_div("A")
@@ -13,55 +13,55 @@ if browser_was_button_click("A") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("B") then
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     else if browser_was_button_click("A") then //tag
         browser_alter_absolute_div("A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
         break
     end if
     wait(0.1)
     end while
     
 else if browser_was_button_click("B") then
-    browser_alter_absolute_div("B", "color", "#00FFFF")
+    browser_alter_absolute_div("B", "color", "#9C215C")
     while 1
     if browser_was_button_click("match4B") then
         browser_delete_absolute_div("B")
@@ -72,54 +72,54 @@ else if browser_was_button_click("B") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("A") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     else if browser_was_button_click("B") then //tag
         browser_alter_absolute_div("B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
         break
     end if
     wait(0.1)
     end while
 else if browser_was_button_click("C") then
-    browser_alter_absolute_div("C", "color", "#00FFFF")
+    browser_alter_absolute_div("C", "color", "#9C215C")
     while 1
     if browser_was_button_click("match4C") then
         browser_delete_absolute_div("C")
@@ -130,54 +130,54 @@ else if browser_was_button_click("C") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("A") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("B") then
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     else if browser_was_button_click("C") then //tag
         browser_alter_absolute_div("C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
         break
     end if
     wait(0.1)
     end while
 else if browser_was_button_click("D") then
-    browser_alter_absolute_div("D", "color", "#00FFFF")
+    browser_alter_absolute_div("D", "color", "#9C215C")
     while 1
     if browser_was_button_click("match4D") then
         browser_delete_absolute_div("D")
@@ -188,54 +188,54 @@ else if browser_was_button_click("D") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("A") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("B") then
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     else if browser_was_button_click("D") then //tag
         browser_alter_absolute_div("D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
         break
     end if
     wait(0.1)
     end while   
 else if browser_was_button_click("match4A") then //match4Afishing
-    browser_alter_absolute_div("match4A", "color", "#00FFFF")
+    browser_alter_absolute_div("match4A", "color", "#9C215C")
     while 1
     if browser_was_button_click("A") then
         browser_delete_absolute_div("match4A")
@@ -246,54 +246,54 @@ else if browser_was_button_click("match4A") then //match4Afishing
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("match4D") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then //tag
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
         break
     end if
     wait(0.1)
     end while
 else if browser_was_button_click("match4B") then 
-    browser_alter_absolute_div("match4B", "color", "#00FFFF")
+    browser_alter_absolute_div("match4B", "color", "#9C215C")
     while 1
     if browser_was_button_click("B") then
         browser_delete_absolute_div("match4B")
@@ -304,54 +304,54 @@ else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("match4D") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then //tag
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
         break    
     end if
     wait(0.1)
     end while
 else if browser_was_button_click("match4C") then 
-    browser_alter_absolute_div("match4C", "color", "#00FFFF")
+    browser_alter_absolute_div("match4C", "color", "#9C215C")
     while 1
     if browser_was_button_click("C") then
         browser_delete_absolute_div("match4C")
@@ -362,54 +362,54 @@ else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("B") then
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("D") then
         browser_alter_absolute_div("D", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("D", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("D", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("match4D") then
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then //tag
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
         break 
     end if
     wait(0.1)
     end while
 else if browser_was_button_click("match4D") then 
-    browser_alter_absolute_div("match4D", "color", "#00FFFF")
+    browser_alter_absolute_div("match4D", "color", "#9C215C")
     while 1
     if browser_was_button_click("D") then
         browser_delete_absolute_div("match4D")
@@ -420,48 +420,48 @@ else if browser_was_button_click("match4D") then
         browser_alter_absolute_div("A", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("A", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("A", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("B") then
         browser_alter_absolute_div("B", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("B", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("B", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("C") then
         browser_alter_absolute_div("C", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("C", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("C", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("match4A") then
         browser_alter_absolute_div("match4A", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4A", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("match4A", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("match4B") then
         browser_alter_absolute_div("match4B", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4B", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("match4B", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("match4C") then
         browser_alter_absolute_div("match4C", "color", "#FF0000")
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4C", "color", "#000000")
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("match4C", "color", "#24219C")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     else if browser_was_button_click("match4D") then //tag
         browser_alter_absolute_div("match4D", "color", "#FF0000")
         wait(0.5)
-        browser_alter_absolute_div("match4D", "color", "#000000")
+        browser_alter_absolute_div("match4D", "color", "#24219C")
         break
     end if
     wait(0.1)

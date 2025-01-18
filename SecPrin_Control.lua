@@ -735,7 +735,7 @@ setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
     nitroApp("BusinessRascal", "Don’t forget an example of a Deterrent Control in the Operational Category would be a Reception Desk.", "_", 1)
-    wait(0.7)T
+    wait(0.7)
     nitroCaption(1)
     browser_set_fake_cookie_value("grid_Location", "opDeterrent")
     browser("https://learn.haikuinc.io/table")
@@ -967,7 +967,7 @@ preventiveDialogue.steps.push(setupSequence)
 while true
   isPreventiveDialogue = preventiveDialogue.isPerformed()
 
-  if isPreventiveDialogue == 1 or then
+  if isPreventiveDialogue == 1 then
     break
   end if
   
