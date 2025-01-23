@@ -46,7 +46,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "Security Controls aim to:%0AA) Prevent security events%0AB) If something does happen%0A   1. minimize the impact%0A   2. limit the damage", "_", 1)
+    nitroApp("BusinessGungnir", "Security Controls aim to:%0AA) Prevent security events%0AB) If something does happen%0A   1) minimize the impact%0A   2) limit the damage", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -55,7 +55,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "So RASCAL, on to the definitions!", "_", 1)
+    nitroApp("BusinessGungnir", "So Rascal, on to the definitions!", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -238,7 +238,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "Examples include:%0A‘Lunch and Learns’%0ATable Top exercises%0ASecurity Guards.", "_", 1)
+    nitroApp("BusinessGungnir", "Examples include:%0A‘Lunch and Learns’%0ATable Top exercises%0ASecurity Guards", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -302,7 +302,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "Controls in the Physical Category not only physically limit physical access, they are also physical themselves.%0AYou can touch them.", "_", 1)
+    nitroApp("BusinessGungnir", "Controls in the Physical Category not only physically limit physical access, they are also physical themselves.%0A%0A-You can touch them.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -329,7 +329,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "Naturally.%0A{PlayerName} please direct your attention to the webpage that is about to pop up.%0ABut first…", "_", 1)
+    nitroApp("BusinessRascal", "Naturally.%0A%0A{PlayerName} please direct your attention to the webpage that is about to pop up.%0A%0ABut first…", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser("https://learn.haikuinc.io/index")
@@ -371,6 +371,7 @@ controlTypedialogue.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q1_answer", "", [ "1" ])
 setupSequence.action = function()
+    setGoalAsCompleted("Learn about Control Categories")
     nitroApp("BusinessGungnir", "Great job, {PlayerName}!", "_", 1)
     wait(0.7)
     nitroCaption(1)
@@ -471,7 +472,7 @@ controlTypedialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "Common Control Types Include:%0ADirective%0ADeterrent%0APreventive%0ADective%0ACompensating%0ACorrective", "_", 1)
+    nitroApp("BusinessRascal", "Common Control Types Include:%0A1. Directive%0A2. Deterrent%0A3. Preventive%0A4. Detective%0A5. Compensating%0A6. Corrective", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -517,7 +518,7 @@ controlTypedialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "If you just said to yourself, that sounds like the Managerial Category, you’re not wrong.%0ADirective Controls are more aligned with the Managerial Category, such as Compliance Policies.%0ANevertheless, there are examples for each control category.", "_", 1)
+    nitroApp("BusinessGungnir", "If you just said to yourself, that sounds like the Managerial Category, you’re not wrong.%0A%0ADirective Controls are more aligned with the Managerial Category, such as Compliance Policies.%0A%0ANevertheless, there are examples for each control category.", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser_set_fake_cookie_value("grid_Location", "manDirective")
@@ -559,7 +560,7 @@ controlTypedialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessDekkar", "While signs, such as ‘Emergence Exit’ would be under Directive control for the Physical category.%0A%0AIt ‘directs’ people where to go.", "_", 1)
+    nitroApp("BusinessDekkar", "While signs, such as ‘Emergency Exit’ would be under Directive control for the Physical category.%0A%0AIt ‘directs’ people where to go.", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser_set_fake_cookie_value("grid_Location", "phyDirective")
@@ -611,7 +612,7 @@ Q2_True.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q2_answer", "", [ "True" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AHappy Dance Emoji Time!%0ADirectice Controls are put in place as guidance for secure behavior. ", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AHappy Dance Emoji Time!%0A%0ADirectice Controls are put in place as guidance for secure behavior. ", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -623,7 +624,7 @@ Q2_False.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q2_answer", "", [ "False" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AInsert Buzzer noise%0ATo help you remember, think about a director of a movie. They are they to give <b>guidance</b> to the actors.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AInsert Buzzer Noise%0A%0ATo help you remember, think about a director of a movie. They are they to give <b>guidance</b> to the actors.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -634,6 +635,7 @@ while true
   isQ2True = Q2_True.isPerformed()
 
   if isQ2False == 1 or isQ2True == 1 then
+    setGoalAsCompleted("Learn about Directive Controls")
     break
   end if
   
@@ -698,7 +700,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "techDeterrent")
 browser("https://learn.haikuinc.io/table")
 end function
-controlTypedialogue.steps.push(setupSequence)
+deterrentDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -709,7 +711,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "phyDeterrent")
     browser("https://learn.haikuinc.io/table")
 end function
-controlTypedialogue.steps.push(setupSequence)
+deterrentDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -745,7 +747,7 @@ deterrentDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessDekkar", "Wait a minute, why isn’t a reception desk in the Physical Category?%0AI can touch it and it’s a physical barrier.", "_", 1)
+    nitroApp("BusinessDekkar", "Wait a minute, why isn’t a reception desk in the Physical Category?%0A%0AI can touch it and it’s a physical barrier.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -754,7 +756,7 @@ deterrentDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "I have to admit, there is some fluidity between some of the categories.%0ASome controls can span different types and categories.", "_", 1)
+    nitroApp("BusinessGungnir", "I have to admit, there is some fluidity between some of the categories.%0A%0ASome controls can span different types and categories.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -790,7 +792,7 @@ deterrentDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "{PlayerName}, think fast -True or False?", "_", 1)
+    nitroApp("BusinessRascal", "{PlayerName}, think fast%0A-True or False?", "_", 1)
     wait(0.7)
     nitroCaption(0)
     browser("https://learn.haikuinc.io/Q3")
@@ -813,7 +815,7 @@ Q3_True.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q3_answer", "", [ "True" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ANo Whammies, no whammies -uh-oh a whammy%0ADeterrent and Corrective Controls are on different coins. It’s Preventive Controls that are closely aligned with Deterrent Controls.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ANo Whammies, no whammies -uh-oh a whammy%0A%0ADeterrent and Corrective Controls are on different coins. It’s Preventive Controls that are closely aligned with Deterrent Controls.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -825,7 +827,7 @@ Q3_False.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q3_answer", "", [ "False" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AScore One for {PlayerName}!%0ADeterrent and Preventive Controls are the two that are closely aligned.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AScore One for {PlayerName}!%0A%0ADeterrent and Preventive Controls are the two that are closely aligned.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -836,6 +838,7 @@ while true
   isQ3True = Q3_True.isPerformed()
 
   if isQ3False == 1 or isQ3True == 1 then
+    setGoalAsCompleted("Learn about Deterrent Controls")
     break
   end if
   
@@ -919,7 +922,7 @@ preventiveDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessDekkar", "No, I starting to get it.%0AJust like duties at a reception desk are implemented by people, so is a guard shack.%0A%0AIf someone gets past the reception desk, they call security, who are stationed at the shack ready to <i>prevent</i> that person from trespassing even more.", "_", 1)
+    nitroApp("BusinessDekkar", "No, I'm starting to get it.%0AJust like duties at a reception desk are implemented by people, so is a guard shack.%0A%0AIf someone gets past the reception desk, they call security, who are stationed at the shack ready to <i>prevent</i> that person from trespassing even more.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -959,7 +962,7 @@ setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
     nitroApp("BusinessRascal", "Which is the best example of a Preventative Control?", "_", 1)
     wait(0.7)
-    nitroCaption(1)
+    nitroCaption(0)
     browser("https://learn.haikuinc.io/Q4")
 end function
 preventiveDialogue.steps.push(setupSequence)
@@ -980,9 +983,9 @@ Q4_A.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q4_answer", "", [ "A" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0ANothing but net!%0AAnti-Virus is considered a Preventative Control because it is designed to stop malicious software and other security threats before they can execute or cause harm.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0ANothing but net!%0A%0AAnti-Virus is considered a Preventative Control because it is designed to stop malicious software and other security threats before they can execute or cause harm.", "_", 1)
     wait(0.7)
-    nitroCaption(0)
+    nitroCaption(1)
 end function
 Q4_A.steps.push(setupSequence)
 
@@ -992,9 +995,9 @@ Q4_B.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q4_answer", "", [ "B" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOof, air ball.%0APhishing awareness is a Directive Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOof, air ball.%0A%0APhishing awareness is a Directive Control.%0A%0AIt gives guidance to employees on what to do if they encounter a phishing email.", "_", 1)
     wait(0.7)
-    nitroCaption(1)
+    nitroCaption(0)
 end function
 Q4_B.steps.push(setupSequence)
 
@@ -1004,7 +1007,7 @@ Q4_C.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q4_answer", "", [ "C" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ABrick!%0A A Splash Screen is a Deterrent Control.%0AIt serves to discourage malicious or unauthorized activities by creating awareness of consequences.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ABrick!%0A%0AA Splash Screen is a Deterrent Control.%0A%0AIt serves to discourage malicious or unauthorized activities by creating awareness of consequences.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1016,7 +1019,7 @@ Q4_D.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q4_answer", "", [ "D" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AGran Error Amigo.%0AA basketball goal is not considered a control of any type.%0AHowever, if in the future there are employee morale controls, then this would be in the Physical Category!", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AGran Error Amigo.%0A%0AA basketball goal is not considered a control of any type.%0A%0AHowever, if in the future there are employee morale controls, then this would be in the Physical Category!", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1029,6 +1032,7 @@ while true
   isQ4_D = Q4_D.isPerformed()
 
   if isQ4_A == 1 then
+    setGoalAsCompleted("Learn about Preventive Controls")
     break
   end if
   
@@ -1046,7 +1050,7 @@ setupSequence.action = function()
     nitroCaption(1)
     browser("https://learn.haikuinc.io/hillside")
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1055,7 +1059,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1064,7 +1068,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1073,7 +1077,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1082,7 +1086,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1091,7 +1095,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+midListHill.steps.push(setupSequence)
 
 while true
     isMidListHill = midListHill.isPerformed()
@@ -1103,8 +1107,8 @@ while true
   wait(0.1)
 end while 
 
-detective = new Sequence
-detective.steps = []
+detectiveDialogue = new Sequence
+detectiveDialogue.steps = []
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1114,7 +1118,7 @@ setupSequence.action = function()
     nitroCaption(1)
     browser("https://learn.haikuinc.io/")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1124,7 +1128,7 @@ setupSequence.action = function()
     nitroCaption(1)
     browser("https://learn.haikuinc.io/detective")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1133,7 +1137,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1142,7 +1146,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1151,7 +1155,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1160,7 +1164,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1171,7 +1175,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "techDetective")
     browser("https://learn.haikuinc.io/table")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1182,7 +1186,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "manDetective")
     browser("https://learn.haikuinc.io/table")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1193,7 +1197,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "opDetective")
     browser("https://learn.haikuinc.io/table")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1204,7 +1208,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "phyDetective")
     browser("https://learn.haikuinc.io/table")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1213,7 +1217,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1222,7 +1226,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1232,12 +1236,12 @@ setupSequence.action = function()
     nitroCaption(0)
     browser("https://learn.haikuinc.io/Q5")
 end function
-preventiveDialogue.steps.push(setupSequence)
+detectiveDialogue.steps.push(setupSequence)
 
 while true
-    isDetective = detective.isPerformed()
+    isDetectiveDialogue = detectiveDialogue.isPerformed()
 
-  if isDetective == 1 then
+  if isDetectiveDialogue == 1 then
     break
   end if
   
@@ -1250,7 +1254,7 @@ Q5_True.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q5_answer", "", [ "True" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AElementary my dear {PlayerName}.%0A Detective Controls identify security incidents and <b>alert</b> organizations if things are abnormal.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AElementary my dear {PlayerName}.%0A%0ADetective Controls identify security incidents and <b>alert</b> organizations if things are abnormal.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1262,7 +1266,7 @@ Q5_False.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q5_answer", "", [ "False" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AYou see, but you do not observe.%0AA Detective control’s main purpose is to search around looking for clues that might point us to anything abnormal in the organization.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AYou see, but you do not observe.%0A%0AA Detective control’s main purpose is to search around looking for clues that might point us to anything abnormal in the organization.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1273,6 +1277,7 @@ while true
   isQ5True = Q5_True.isPerformed()
 
   if isQ5False == 1 or isQ5True == 1 then
+    setGoalAsCompleted("Learn about Detective Controls")
     break
   end if
   
@@ -1281,16 +1286,6 @@ end while
 
 compensatingDialogue = new Sequence
 compensatingDialogue.steps = []
-
-setupSequence = new SequenceStep
-setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
-setupSequence.action = function()
-    nitroApp("BusinessGungnir", "On to <b><color=#66DDFB>Compensating</color></b> Controls", "_", 1)
-    wait(0.7)
-    nitroCaption(0)
-    browser("https://learn.haikuinc.io")
-end function
-compensatingDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1366,7 +1361,7 @@ compensatingDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessDekker", "And a power generator would be a Compensating Control in the Physical Category?", "_", 1)
+    nitroApp("BusinessDekkar", "And a power generator would be a Compensating Control in the Physical Category?", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser_set_fake_cookie_value("grid_Location", "phyCompensating")
@@ -1403,7 +1398,7 @@ end function
 compensatingDialogue.steps.push(setupSequence)
 
 while true
-  isCompensating = compensating.isPerformed()
+  isCompensating = compensatingDialogue.isPerformed()
 
   if isCompensating == 1 then 
     break
@@ -1418,7 +1413,7 @@ Q6_A.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q6_answer", "", [ "A" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ABuzzy noise, sad face emoji :-(%0ARegular security awareness training is a Directive Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ABuzzy noise, sad face emoji :-(%0A%0ARegular security awareness training gives <i>guidance</i> to employees on how to be cyber resilient making it a Directive Control.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1430,7 +1425,7 @@ Q6_B.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q6_answer", "", [ "B" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOh, no, try again!%0AEnhanced firewall rules are a Preventive Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AGame over man, game over!%0A%0AOk, not really, but while I’m sure the server room is hopping, -there is no need for a bouncer.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1442,7 +1437,7 @@ Q6_C.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q6_answer", "", [ "C" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AWowzers, you’re taking butts and kicking names!%0AA power generator would compensate for a lack of electricity to the building, therefore it is a Compensation Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AWowzers, you’re taking butts and kicking names!%0A%0AA power generator would compensate for a lack of electricity to the building, therefore it is a Compensation Control.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1454,7 +1449,7 @@ Q6_D.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q6_answer", "", [ "D" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AGame over man, game over!%0AOk, not really, but while I’m sure the server room is hopping, -there is no need for a bouncer.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOh, no, try again!%0A%0AEnhanced firewall rules <i>prevent</i> unauthorized access to a network making them a Preventive Control.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1467,6 +1462,7 @@ while true
   isQ6_D = Q6_D.isPerformed()
 
   if isQ6_C == 1 then
+    setGoalAsCompleted("Learn about Compensating Controls")
     break
   end if
   
@@ -1484,7 +1480,7 @@ setupSequence.action = function()
     nitroCaption(1)
     browser("https://learn.haikuinc.io/")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1494,7 +1490,7 @@ setupSequence.action = function()
     nitroCaption(1)
     browser("https://learn.haikuinc.io/corrective")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1503,7 +1499,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1512,16 +1508,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
-
-setupSequence = new SequenceStep
-setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
-setupSequence.action = function()
-    nitroApp("BusinessGungnir", "They are in place to help us get back to normal; to reduce the impact of a cyber incident.", "_", 1)
-    wait(0.7)
-    nitroCaption(1)
-end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1532,7 +1519,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "techCorrective")
     browser("https://learn.haikuinc.io/table")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1543,7 +1530,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "manCorrective")
     browser("https://learn.haikuinc.io/table")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1554,7 +1541,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "opCorrective")
     browser("https://learn.haikuinc.io/table")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1565,7 +1552,7 @@ setupSequence.action = function()
     browser_set_fake_cookie_value("grid_Location", "phyCorrective")
     browser("https://learn.haikuinc.io/table")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1573,8 +1560,9 @@ setupSequence.action = function()
     nitroApp("BusinessRascal", "Which is the best example of a Corrective Control?", "_", 1)
     wait(0.7)
     nitroCaption(0)
+    browser("https://learn.haikuinc.io/Q7")
 end function
-compensatingDialogue.steps.push(setupSequence)
+correctiveDialogue.steps.push(setupSequence)
 
 while true
   isCorrectiveDialogue = correctiveDialogue.isPerformed()
@@ -1592,7 +1580,7 @@ Q7_A.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q7_answer", "", [ "A" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOh, no, no, no.%0AA Compensating Control helps an organization recover from a security incident.%0ANo matter how mean an employee looks, it won’t help an organization recover.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AOh, no, no, no.%0A%0AA Compensating Control helps an organization recover from a security incident.%0A%0ANo matter how mean an employee looks, it won’t help an organization recover.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1604,7 +1592,7 @@ Q7_B.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q7_answer", "", [ "B" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ANope, try again!%0ARemeber a Compensating Control helps an organization recover from a security incident.%0On-Boarding Policies are an example of a Preventive Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0ANope, try again!%0A%0ARemember a Compensating Control helps an organization recover from a security incident.%0A%0AOn-Boarding Policies are an example of a Preventive Control.%0A%0AThese policies ensure access is granted only to necessary systems and enforce compliance with security protocols, in an effort to <i>prevent</i> cyber incidents.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1616,7 +1604,7 @@ Q7_C.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q7_answer", "", [ "C" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AError, wrong input%0ARemeber a Compensating Control helps an organization recover from a security incident.%0AGuard Patrols are an example of a Detective Control.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect</color>%0A%0AError, wrong input%0A%0ARemember a Compensating Control helps an organization recover from a security incident.%0A%0AGuard Patrols are an example of a Detective Control.%0A%0AThe guards patrol an area looking to <i>detect</i> if anything is abnormal.", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
@@ -1628,7 +1616,7 @@ Q7_D.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q7_answer", "", [ "D" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AWhoo-hoo, {PlayerName} you are throwing strikes!%0APolices for reporting issues is the best example of a Corrective Control.%0AThese polices go into action after an incident has occurred.", "_", 1)
+    nitroApp("BusinessRascal", "<color=#46FF33>Correct</color>%0A%0AWhoo-hoo, {PlayerName} you are throwing strikes!%0A%0APolices for reporting issues is the best example of a Corrective Control.%0A%0AThese polices go into action after an incident has occurred.", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1641,6 +1629,7 @@ while true
   isQ7_D = Q7_D.isPerformed()
 
   if isQ7_D == 1 then
+    setGoalAsCompleted("Learn about Corrective Controls")
     break
   end if
   
@@ -1653,12 +1642,13 @@ wrapup.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "Let us remember what we discussed today is not an inclusive list.%0Athere are multiple security controls for each category and type.", "_", 1)
+    nitroApp("BusinessGungnir", "Let us remember what we discussed today is not an inclusive list.%0A%0AThere are multiple security controls for each category and type.", "_", 1)
     wait(0.7)
     nitroCaption(1)
-    browser("http://learn.haikuinc.io/table")
+    browser_set_fake_cookie_value("grid_Location", "theEnd")
+    browser("https://learn.haikuinc.io/table")
 end function
-compensatingDialogue.steps.push(setupSequence)
+wrapup.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1667,7 +1657,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
+wrapup.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1676,7 +1666,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
+wrapup.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1685,7 +1675,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
+wrapup.steps.push(setupSequence)
 
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
@@ -1694,7 +1684,7 @@ setupSequence.action = function()
     wait(0.7)
     nitroCaption(1)
 end function
-compensatingDialogue.steps.push(setupSequence)
+wrapup.steps.push(setupSequence)
 
 while true
   isWrapup = wrapup.isPerformed()
