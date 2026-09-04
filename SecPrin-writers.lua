@@ -29,7 +29,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "It's not possible to completely eliminate risk, so our goal is to minimize it.%0ASince we cannot become completely cyber secure, the next best thing is to become <b><color=#66DDFB>Cyber Resilient...</color></b>.", "_", 1)
+    nitroApp("BusinessGungnir", "It's not possible to completely eliminate risk, so our goal is to minimize it.%0ASince we cannot become completely cyber secure, the next best thing is to become <b><color=#66DDFB>Cyber Resilient</color></b>...", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -56,7 +56,7 @@ dialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "So, Rascal... onto the definitions!", "_", 1)
+    nitroApp("BusinessGungnir", "So, Rascal... on to the definitions!", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -814,7 +814,7 @@ matchingQuestion.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Matching_answer", "", "1")
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "Nicely Accomplished!", "_", 1)
+    nitroApp("BusinessRascal", "Nicely accomplished!", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1137,7 +1137,7 @@ detectiveDialogue.steps.push(setupSequence)
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "Why thank you Mina, I strive to live up to your opinion of me.", "_", 1)
+    nitroApp("BusinessRascal", "Why, thank you Mina!%0AI strive to live up to your opinion of me.%0AYou are quite wily and astute yourself...", "_", 1)
     wait(0.7)
     nitroCaption(1)
 end function
@@ -1276,7 +1276,7 @@ compensatingDialogue.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessGungnir", "Let's move onto <b><color=#66DDFB>Compensating</color></b> Controls", "_", 1)
+    nitroApp("BusinessGungnir", "Let's move on to <b><color=#66DDFB>Compensating</color></b> Controls", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser("https://learn.haikuinc.io")
@@ -1462,7 +1462,7 @@ correctiveDialogue.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("nitrocaption", "", [ "1" ])
 setupSequence.action = function()
-    nitroApp("BusinessDekkar", "Rascal!%0AI think you meant, %22kicking butt and taking names!%22.", "_", 1)
+    nitroApp("BusinessDekkar", "Rascal!%0AI think you meant, %22kicking butt and taking names!%22", "_", 1)
     wait(0.7)
     nitroCaption(1)
     browser("https://learn.haikuinc.io/")
@@ -1609,7 +1609,7 @@ Q7_B.steps = []
 setupSequence = new SequenceStep
 setupSequence.commandWaiting = getCommandWaiting("Q7_answer", "", [ "B" ])
 setupSequence.action = function()
-    nitroApp("BusinessRascal", "<color=#E82629>Incorrect!</color>%0A%0ANope, that's not the one!%0A%0AOn-Boarding Policies are an example of a Preventive Control, because they ensure access is granted only to necessary systems and enforce compliance with security protocols, helping to <i>prevent</i> cyber incidents.%0A%0Remember, a Corrective Control helps an organization  <i>recover</i>  from a security incident.%0A%0AGive it another shot!", "_", 1)
+    nitroApp("BusinessRascal", "<color=#E82629>Incorrect!</color>%0A%0ANope, that's not the one!%0A%0AOn-Boarding Policies are an example of a Preventive Control, because they ensure access is granted only to necessary systems and enforce compliance with security protocols, helping to <i>prevent</i> cyber incidents.%0A%0ARemember, a Corrective Control helps an organization  <i>recover</i>  from a security incident.%0A%0AGive it another shot!", "_", 1)
     wait(0.7)
     nitroCaption(0)
 end function
